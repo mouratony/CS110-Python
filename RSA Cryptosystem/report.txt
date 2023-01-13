@@ -1,0 +1,59 @@
+1. Enter the number of hours it took you to complete the project between
+   the <<< and >>> signs below (eg, <<<10>>>).
+
+   <<<9>>>
+   
+2. Enter the difficulty level (1: very easy; 5: very difficult) of the project
+   between the <<< and >>> signs below (eg, <<<3>>>).
+
+   <<<3>>>
+
+3. Provide a short description of how you approached each problem, issues you 
+   encountered, and how you resolved those issues.
+
+   Problem 1 (RSA Module):To solve this problem, I first created a function
+   called keygen() which generates keys. Inside keygen() I called the function
+   _primes() that makes a list of primes with the given interval. Then, I called
+   another function _sample() which makes a list with k elements(randomly ordered)
+   of a given list. Using _sample() I got the value of q and p, automatically, I got
+   the value of n and m. Then I called the function _choice(), that gets a random value
+   of a given list and _primes(). Using the while loop, I got the value of e, then again
+   using the while loop and a given formula I got the value of d, therefore, returning a
+   tuple with the value of n, e, and d, I finish making the keygen(). Furthermore, I had
+   to create two functions, encrypt() and decrypt(), that both have a formula which was
+   given. The other functions of this problem and the unit that tests the library, were
+   already made by professor Swami. I found an issue in this problem. The issue was
+   on the function _primes(). Instead of getting a list of primes, by mistake I was
+   returning a list of odd numbers. With the help of the TA I was able to identify the
+   issue.
+
+   Problem 2 (Keygen Client): I found no issue. I solved this problem by calling rsa.keygen()
+   and assigned the values of the keys to three variables. Therefore, using the concatenation
+   I got the correct output.
+
+   Problem 3 (Encryption Client): No issue encountered. To solve this problem, after getting
+   the public key from the command line, the message from the standard input, and the number
+   of bits needed to encode n (using rsa.bitLength()), I used a for loop and rsa.encrypt() to
+   encrypt each character of the message, then I used rsa.dec2bin() to write the encrypted
+   value to the standard output.
+
+   Problem 4 (Decryption Client): I had no issues. I solved this problem by getting the private
+   key from the command line, the message(in binary) from the standard input, and the number
+   of bits per character(using rsa.bitLength()). To write the standard output I used a for loop,
+   the rsa.bin2dec(), rsa.decrypt(), stdio.write() and the built-in function chr().
+
+4. Did you receive help from anyone? List their names, status (classmate, 
+   CS110 grad, TA, other), and the nature of help received.
+
+   Name               Status       Help Received
+Benjamin Kwapong       TA           Debugging Problem 1
+
+   ...                ...          ...
+
+5. List any other comments here. Feel free to provide any feedback on how
+   much you learned from doing the assignment, and whether you enjoyed
+   doing it.
+
+   I think this project was challenging, but not too difficult, I found it easier than the last
+   one. I enjoyed doing it and I learned how to better use functions. I had a lot of fun and
+   can't wait for the next assignment.

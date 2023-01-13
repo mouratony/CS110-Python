@@ -1,0 +1,66 @@
+1. Enter the number of hours it took you to complete the project between
+   the <<< and >>> signs below (eg, <<<10>>>).
+
+   <<<10>>>
+   
+2. Enter the difficulty level (1: very easy; 5: very difficult) of the project
+   between the <<< and >>> signs below (eg, <<<3>>>).
+
+   <<<4.5>>>
+
+3. Provide a short description of how you approached each problem, issues you 
+   encountered, and how you resolved those issues.
+
+   Problem 1 (Particle Representation): I found no issues. I solved it by
+   initializing the instance variables appropriately on the constructor.
+   Then, in the add() method I applied the running average formula. In the b.mass()
+   method I returned self.pixels, which is the number of pixels in the blob.
+   In b.distanceTo() method, I used the same idea of exercise point.py.
+
+   Problem 2 (Particle Identification): I approached this problem by creating in
+   the constructor the following: an empty list(_blobs), two instance variables, a 2D array
+   of booleans, and nested for loops (inside it I created an object of type blob, I called
+   _findBlob() method with appropriate arguments, and I used an if condition to add a blob
+   with mass non-zero). In bf._findBlob() method I used recursion and applied necessaries
+   conditions in order to identify the blobs. Afterwards, in bf.getBeads() method, I used a
+   for loop and an if condition to create a list of beads and return it. I encountered an issue with
+   the bf._findBlob() method. To resolve the issue I reached out to Benjamin, the TA, who took the
+   time to explain that i and j must be greater than 0.
+
+   Problem 3 (Particle Tracking): I solved this problem by getting command line arguments that I
+   later used to create an object, bf, of type BlobFinder. Using bf.getBeads() method I got a list of
+   beads, named prevBeads. Then, I used three for loops  one inside another, where the
+   first one was to iterate through a Picture object, thus for each frame on the Picture I created
+   an object of type BlobFinder() then I got a list of beads from it, named currBeads. Therefore,
+   the second for loop was to iterate through currBeads, and the third to iterate through
+   prevBeads, so for each currBead I would find the closest prevBead to it. For that I created an
+   empty list for each currBead where I added all the prevBead less than a delta distance. Therefore,
+   in the end applying the min() built-in function I found the closest prevBead and wrote it on
+   standard output. I was getting the wrong output in the beginning because I had the empty list inside
+   the prevBeads for loop which was resetting the list to empty every time we iterates through
+   prevBeads. However, this issue was solved with the help of a TA.
+
+   Problem 4 (Data Analysis): No issues encountered. I solved this problem by initializing four constant
+   (ETA, RHO, T, R) to a given value. Then I set var(variance) and n(number of beads displacement) to 0.
+   Then using while loop and the appropriate condition(not stdio.isEmpty()) I calculate the variance(var)
+   by getting each pixel from standard input using stdio.readFloat() and converted it to meter and added its
+   square to the var variable, and incremented n by 1. Therefore, after getting all the pixels and get the
+   value of var, I divided it by 2n. Then I calculated the estimate value of the Boltzmann's constant and
+   Avogadro's constant using the given formulas.
+
+4. Did you receive help from anyone? List their names, status (classmate, 
+   CS110 grad, TA, other), and the nature of help received.
+
+   Name               Status       Help Received
+Benjamin Kwapong        TA         debugging
+
+   ...                ...          ...
+
+5. List any other comments here. Feel free to provide any feedback on how
+   much you learned from doing the assignment, and whether you enjoyed
+   doing it.
+
+   This assignment was very interesting, also very challenging. I think it
+   was the hardest project we've had. However, I really enjoyed myself doing
+   it, I learned how to better use and create data type. Can't wait for the
+   next project.

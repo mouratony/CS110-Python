@@ -1,0 +1,62 @@
+1. Hours to complete the project: 8 hours,
+The difficult level: 3
+
+2. Provide a short description of how you approached each problem, issues you 
+   encountered, and how you resolved those issues.
+
+   Problem 1 (Markov Model Data Type)
+     I approached this problem by: (1) initializing the instance
+     variables appropriately in the constructor; (2) Creating a symbol table _st,
+     which values are symbol tables; (3) using a for loop to insert the key-value
+     pair to _st correctly; (4) returning the self._k(instance variable) in the
+     m.order() method; (5) returning the sum of the values of kgram in symbol table
+     _st(used sum(self._st[kgram].values())) in the m.kgram_freq() method; (6)
+     returning the value of a character following kgram (used self._s[kgram][c])
+     in m.char_freq() method; (7) returning in m.rand() method a random(using
+     stdrandom.discrete) character(key) in a _st[kgram]; (8) returning in m.gen()
+     method a string with random characters, using a for loop and calling m.rand()
+     method with the right arguments.
+
+     Issues and resolution: No issues encountered.
+
+   Problem 2 (Random Text Generator)
+     I approached this problem by: (1) Getting the two integers as command
+     line arguments; (2) reading the text from standard input and assign it to a
+     variable; (3) creating a Markov model object; (4) making a call to m.gen() method
+     to the said model, assigning the right arguments to it.
+
+     Issues and resolution: I found no issues
+
+   Problem 3 (Noisy Message Decoder)
+     I solved this problem by: (1) going back to problem 1 because I
+     needed to write the code of the m.replace_unknown() method since it is required
+     in order to solve this problem; (2) adding the missing features to the method
+     m.replace_unknown, where I used nested for loops with the appropriate conditions
+     and statements; (3) going to fix_corrupted.py, and accepting two command line
+     arguments; (4) initializing variable text to text read from standard input;
+     (5) creating a Markov model using correct arguments; (6) calling the method
+     m.replace_unknown() from MarkovModel.py to decode the corrupted message that
+     I got from command line; (7) Write the decode text to standard output.
+
+     Issues and resolution: I found an issue in doing m.replace_unknown() method.
+     I was getting the wrong output because in the kgram_after I wasn't indexing it
+     correctly. I was using corrupted[i:self._k + i] which was including the
+     character that must be replaced. However, TA Benjamin Kwapong debugged my code, and
+     the resolution was corrupted[i + 1: self._k + 1]. I just needed to add 1 to i
+     in order to not include the noisy character(~).
+
+3. Did you receive help from anyone? List their names, status (classmate,
+   CS110 grad, TA, other), and the nature of help received.
+
+   Name               Status       Help Received
+   Benjamin Kwapong    TA          Debugging
+
+   ...                ...          ...
+
+4. List any other comments here. Feel free to provide any feedback on how
+   much you learned from doing the assignment, and whether you enjoyed
+   doing it.
+
+   I found this assignment very interesting, but also challenging. It was exciting to complete
+   the last project. I really enjoyed learning how to better use symbol table.
+

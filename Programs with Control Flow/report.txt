@@ -1,0 +1,76 @@
+1. Enter the number of hours it took you to complete the project between
+   the <<< and >>> signs below (eg, <<<10>>>).
+
+   <<<8>>>
+   
+2. Enter the difficulty level (1: very easy; 5: very difficult) of the project
+   between the <<< and >>> signs below (eg, <<<3>>>).
+
+   <<<3>>>
+
+3. Provide a short description of how you approached each problem, issues you
+   encountered, and how you resolved those issues.
+
+   Problem 1 (Wind Chill): Professor Swami solved this problem,
+   therefore, I only wrote the comments.
+
+   Problem 2 (Day of the Week): I didn't encounter any issues solving this
+   problem. Similarly to the wind chill problem, I used the if statement
+   and applied the conditions.
+
+   Problem 3 (Playing Card): No errors found. I solved this problem
+   using the if statement under the given conditions.
+
+   Problem 4 (Root Finding):To solve this problem I used the while loop
+   with the given condition. However, I had trouble in finding the correct output
+   because it was missing a variable on the expression which t decrements by.
+   In the end I had to read the problem a few times to realize that the expression
+   was wrong.
+
+   Problem 5 (Greatest Common Divisor): To solve this problem I used a while
+   loop with the given condition. The issue I found was that I didn't know
+   what value would be assigned to q on the exchange process. I solved this
+   by assigning the value of the remainder of p and q to q.
+
+   Problem 6 (Fibonacci Number): No issues found. I approached this problem
+   by using the while conditional loop. Then I used the exchange process
+   similarly to the Greatest Common Divisor problem.
+
+   Problem 7 (Sum of Powers): I had no issues doing this problem. I solved it
+   by using the for loop and the knowledge of the compound assignment statement.
+
+   Problem 8 (Dragon Curve): To solve this problem I used the for loop and the
+   exchange process. I then found an issue in the exchange process when
+   I assigned the value to the variable dragon. For the dragon variable, I had to
+   concatenate dragon(which the value was "F"), string "L", and
+   nograd(which the value was also "F") to get the output of "FLF".
+
+   Problem 9 (Perfect Numbers): No errors found. I solved this problem by using
+   nested for loops and two if statements. The first for loop was to look for the
+   divisors of n, and the other one to see if the sum of the divisors was
+   equal to n.
+
+   Problem 10 (Ramanujan Numbers): I approached this problem using four nested
+   while loops and each one of them had a specific condition. I also used an
+   if statement in order to see if a^3 + b^3 is equal to c^3 + d^3. I found an
+   issue while solving this problem because I didn't increment the value of each
+   positive integer(a, b, c, and d) at the end of each while loop. Therefore, my
+   code was inefficient and I had an incorrect standard output. I solved this issue
+   by incrementing the positive integers by 1 at the end of each while loop.
+
+4. Did you receive help from anyone? List their names, status (classmate, 
+   CS110 grad, TA, other), and the nature of help received.
+
+   Name               Status       Help Received
+Benjamin Kwapong        TA          Debugging and problem10
+
+Richard Anarfi          TA          Exchange process
+
+5. List any other comments here. Feel free to provide any feedback on how
+   much you learned from doing the assignment, and whether you enjoyed
+   doing it.
+
+This project was more difficult than the last one. I learned more about the
+nested loops, if statements, exchange process, and how to better use the
+conditional loops. I really enjoyed doing this assignment, it was
+challenging and fun. I can't wait for the next one.

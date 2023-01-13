@@ -1,0 +1,12 @@
+---
+:id: 30924890
+:submitters:
+- :name: Antonio Moura
+  :email: antonio.moura001@umb.edu
+:created_at: !ruby/object:ActiveSupport::TimeWithZone
+  utc: 2020-03-01 06:16:49.988965000 Z
+  zone: !ruby/object:ActiveSupport::TimeZone
+    name: America/Los_Angeles
+  time: 2020-02-29 22:16:49.988965000 Z
+:status: processed
+:score: 98.4

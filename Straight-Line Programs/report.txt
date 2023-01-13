@@ -1,0 +1,61 @@
+1. Enter the number of hours it took you to complete the project between
+   the <<< and >>> signs below (eg, <<<10>>>).
+
+   <<<7>>>
+   
+2. Enter the difficulty level (1: very easy; 5: very difficult) of the project
+   between the <<< and >>> signs below (eg, <<<3>>>).
+
+   <<<2>>>
+
+3. Provide a short description of how you approached each problem, issues you 
+   encountered, and how you resolved those issues.
+
+   Problem 1 (Day of the Week): I didn't find any issues doing this problem.
+   I solved it using the given equations.
+
+   Problem 2 (Mercator Projection): I didn't find any error.
+   To solve this problem I used the order of operations PEMDAS.
+ 
+   Problem 3 (Great Circle Distance): I approached this problem by separating
+   the math expression into different variables. Thus, there's less chance to miscalculate.
+
+   Problem 4 (Wind Chill): I followed the math order of operations and the given
+   expression to calculate the value of wind chill.
+
+   Problem 5 (Gravitational Force): To solve this problem, I used the provided
+   expression in order to find the value of the gravitational force(F).
+
+   Problem 6 (Snell's Law): I found an issue with the expression to calculate
+   theta2, because it was missing one of the decimals. To solve it,
+   I divided the indexes of refraction, and then
+   multiplied by sin(theta1).
+
+   Problem 7 (Gambler's Ruin): I didn't find any SyntaxErrors.
+   I followed the math order of operation rules.
+
+   Problem 8 (Waiting Time): No issue found. I used the math
+   module.
+
+   Problem 9 (Die Roll): I had no issue. I solved it by using
+   the stdrandom.randomInt function.
+
+   Problem 10 (Three Sort): I found it quite time consuming to find
+   the arithmetic combination in order to get n (the middle value).
+   I solved it by calculating the sum of those three integers taken
+   from the command line, and subtracting them by the min and max value.
+
+4. Did you receive help from anyone? List their names, status (classmate, 
+   CS110 grad, TA, other), and the nature of help received.
+
+   Name               Status       Help Received
+  Benjamin Kwapong      TA       ------ Debugging -------------
+
+   ...              ...          ...
+
+5. List any other comments here. Feel free to provide any feedback on how
+   much you learned from doing the assignment, and whether you enjoyed
+   doing it.
+
+  I enjoyed doing this assignment because it was fun and challenging.
+  I'm looking forward to my next project!
