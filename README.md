@@ -2,20 +2,20 @@
 A compilation of all my CS110 projects utilizing the Python programming language.
 
 
-## Atomic Nature of Matter
+#### Atomic Nature of Matter
 
 
-## Markov Model
+#### Markov Model
 
 
-## Mozart Waltz Generator
+#### Mozart Waltz Generator
 
 
-## Programs with Control Flow
+#### Programs with Control Flow
 
 
-## RSA Cryptosystem
+#### RSA Cryptosystem
 
 
-## Straight-Line Programs
+#### Straight-Line Programs
 
